@@ -2,7 +2,7 @@
 Agentic Organizational Audit - Proof of Concept
 
 Flow:
-  01_survey_questions.md + 02_survey_responses.md  ->  03_agent.py  ->  04_outputs/
+  survey_questions.md + survey_responses.md  ->  agent.py  ->  outputs/
 
 Pipeline:
   1. Follow-up agent:  detects vague answers and generates targeted follow-up questions
@@ -12,7 +12,7 @@ Pipeline:
 Usage:
   pip install anthropic
   export ANTHROPIC_API_KEY=...
-  python3 03_agent.py
+  python3 agent.py
 """
 
 import json
@@ -20,9 +20,9 @@ import pathlib
 import anthropic
 
 MODEL = "claude-sonnet-5-5"  # any capable LLM works; swap model name as needed
-QUESTIONS_FILE = pathlib.Path("01_survey_questions.md")
-RESPONSES_FILE = pathlib.Path("02_survey_responses.md")
-OUTPUT_DIR = pathlib.Path("04_outputs")
+QUESTIONS_FILE = pathlib.Path("survey_questions.md")
+RESPONSES_FILE = pathlib.Path("survey_responses.md")
+OUTPUT_DIR = pathlib.Path("outputs")
 
 client = anthropic.Anthropic()
 

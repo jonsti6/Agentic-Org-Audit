@@ -1,6 +1,6 @@
 # Survey Responses – Fictional Company "Alpenwerk AG"
 
-Fictional mid-sized Swiss manufacturer of industrial pumps (~120 employees). The sample covers 12 respondents from 4 teams. All names and data are invented. Answers are numbered by the questions in `01_survey_questions.md`.
+Fictional mid-sized Swiss manufacturer of industrial pumps (~120 employees). The sample covers 12 respondents from 4 teams. All names and data are invented. Answers are numbered by the questions in `survey_questions.md`.
 
 ## R01 – Sales, Key Account Manager
 1. Sales, key account manager for DACH industrial customers.

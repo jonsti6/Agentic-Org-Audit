@@ -8,13 +8,16 @@ Companies rarely know who actually works on what. Org charts show reporting line
 
 ## Flow
 
-Files are numbered in the order the pipeline uses them:
+```
+survey_questions.md  +  survey_responses.md   →   agent.py   →   outputs/
+      (input)                (input)              (pipeline)     (results)
+```
 
 ```
-01_survey_questions.md   # The fixed questionnaire (5 questions)
-02_survey_responses.md   # Answers of 12 fictional employees at "Alpenwerk AG"
-03_agent.py              # The three-step agent pipeline with all prompts
-04_outputs/
+survey_questions.md      # The fixed questionnaire (5 questions)
+survey_responses.md      # Answers of 12 fictional employees at "Alpenwerk AG"
+agent.py                 # The three-step agent pipeline with all prompts
+outputs/
   01_followups.json      # Step 1: follow-up questions for vague answers
   02_org_map.json        # Step 2: team-level org map
   03_diagnosis.md        # Step 3: strengths, weaknesses, recommendations
@@ -47,7 +50,7 @@ The answers were written to contain known organizational issues, so the output c
 
 ## Results
 
-The pipeline ran end to end. Outputs are in `04_outputs/`:
+The pipeline ran end to end. Outputs are in `outputs/`:
 
 - **Follow-ups:** the agent flagged only R06 as vague and generated three concrete follow-up questions (e.g. "what are two or three specific things you worked on last week").
 - **Org map:** it reconstructed the 4 teams and 9 projects, mapped cross-team collaboration, and flagged three single points of dependency: the senior engineer (R04), the production planner with the capacity Excel (R07), and the Head of Finance holding three roles (R12).
@@ -64,10 +67,10 @@ This is a qualitative check on one synthetic case with a known answer, not a rig
 ```bash
 pip install anthropic
 export ANTHROPIC_API_KEY=your_key
-python3 03_agent.py
+python3 agent.py
 ```
 
-Outputs are written to `04_outputs/`.
+Outputs are written to `outputs/`.
 
 ## Scope and limitations
 

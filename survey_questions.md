@@ -1,6 +1,6 @@
 # Survey Questions (fixed questionnaire)
 
-Every employee receives the same five questions. Vague answers trigger AI-generated follow-up questions (see step 1 in `03_agent.py`).
+Every employee receives the same five questions. Vague answers trigger AI-generated follow-up questions (see step 1 in `agent.py`).
 
 1. What is your team and role?
 2. What are your three main tasks in a typical week?
