@@ -1,0 +1,13 @@
+{
+  "followups": [
+    {
+      "respondent": "R06",
+      "reason": "Answers to questions 2-5 are generic ('various stuff', 'different things', 'whoever needs help', 'it depends'), so it is unclear what tasks, projects, and collaborators make up the role. Team and the junior engineer role are clear, but the actual work is not.",
+      "questions": [
+        "Thinking about last week, what are two or three specific things you worked on (for example a drawing, a test, a document, or a request from a colleague), and roughly how much time did each take?",
+        "Which projects or product series, such as P7 or something else, have you contributed to in the last month, and what was your part in them?",
+        "Who did you last ask for help or who last asked you for help, which team are they in, and what was it about?"
+      ]
+    }
+  ]
+}

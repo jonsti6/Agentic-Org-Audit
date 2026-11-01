@@ -1,0 +1,248 @@
+{
+  "teams": [
+    {
+      "name": "Sales",
+      "headcount_in_sample": 3,
+      "main_activities": [
+        "Customer meetings and key customer negotiations",
+        "Preparing quotes and chasing open orders with production",
+        "Order entry in ERP, answering customer emails, CRM updates",
+        "Forecasting and team management"
+      ]
+    },
+    {
+      "name": "Engineering",
+      "headcount_in_sample": 3,
+      "main_activities": [
+        "Custom pump designs",
+        "CAD work and testing documentation for P7",
+        "Answering sales questions on quotes",
+        "Supporting production with drawing changes"
+      ]
+    },
+    {
+      "name": "Production",
+      "headcount_in_sample": 3,
+      "main_activities": [
+        "Weekly production planning, material availability checks, delivery-date requests from Sales",
+        "Staffing shifts, quality checks, solving line problems on assembly",
+        "Procurement: ordering components, supplier negotiations, tracking deliveries"
+      ]
+    },
+    {
+      "name": "Finance",
+      "headcount_in_sample": 3,
+      "main_activities": [
+        "Monthly reporting, cost analysis, budget planning",
+        "Invoicing, payments, reconciliations",
+        "Financial steering and IT vendor management",
+        "ERP upgrade project lead"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project Atlas (new pricing model)",
+      "lead": "R03",
+      "teams_involved": [
+        "Sales",
+        "Finance"
+      ],
+      "respondents": [
+        "R01",
+        "R03",
+        "R10",
+        "R12"
+      ]
+    },
+    {
+      "name": "ERP upgrade",
+      "lead": "R12",
+      "teams_involved": [
+        "Finance",
+        "Production"
+      ],
+      "respondents": [
+        "R07",
+        "R09",
+        "R10",
+        "R11",
+        "R12"
+      ]
+    },
+    {
+      "name": "P7 (new pump series)",
+      "lead": "unknown",
+      "teams_involved": [
+        "Engineering"
+      ],
+      "respondents": [
+        "R04",
+        "R05"
+      ]
+    },
+    {
+      "name": "Onboarding two new distributors",
+      "lead": "unknown",
+      "teams_involved": [
+        "Sales"
+      ],
+      "respondents": [
+        "R01"
+      ]
+    },
+    {
+      "name": "Export expansion to Poland",
+      "lead": "unknown",
+      "teams_involved": [
+        "Sales"
+      ],
+      "respondents": [
+        "R03"
+      ]
+    },
+    {
+      "name": "CRM clean-up",
+      "lead": "unknown",
+      "teams_involved": [
+        "Sales"
+      ],
+      "respondents": [
+        "R02"
+      ]
+    },
+    {
+      "name": "Capacity planning tool in Excel",
+      "lead": "unknown",
+      "teams_involved": [
+        "Production"
+      ],
+      "respondents": [
+        "R07"
+      ]
+    },
+    {
+      "name": "Lean improvement workshop",
+      "lead": "unknown",
+      "teams_involved": [
+        "Production"
+      ],
+      "respondents": [
+        "R08"
+      ]
+    },
+    {
+      "name": "Supplier consolidation",
+      "lead": "unknown",
+      "teams_involved": [
+        "Production"
+      ],
+      "respondents": [
+        "R09"
+      ]
+    }
+  ],
+  "collaboration": [
+    {
+      "from_team": "Sales",
+      "to_team": "Production",
+      "reason": "Delivery dates, chasing open orders and capacity data for customer promises (R01, R02, R03, R07)"
+    },
+    {
+      "from_team": "Production",
+      "to_team": "Sales",
+      "reason": "Answering delivery-date requests from Sales (R07)"
+    },
+    {
+      "from_team": "Sales",
+      "to_team": "Engineering",
+      "reason": "Technical input for custom quotes (R01, R04)"
+    },
+    {
+      "from_team": "Engineering",
+      "to_team": "Sales",
+      "reason": "Answering sales questions on quotes, 'constantly' (R04)"
+    },
+    {
+      "from_team": "Sales",
+      "to_team": "Finance",
+      "reason": "Invoices, invoice questions, customer master data, Project Atlas pricing (R02, R03, R10, R11)"
+    },
+    {
+      "from_team": "Finance",
+      "to_team": "Sales",
+      "reason": "Invoice questions, pricing and cost analysis (R10, R11)"
+    },
+    {
+      "from_team": "Engineering",
+      "to_team": "Production",
+      "reason": "Drawing changes supporting production; shift lead reports they arrive late (R04, R08)"
+    },
+    {
+      "from_team": "Production",
+      "to_team": "Finance",
+      "reason": "Procurement works with Finance (R09)"
+    },
+    {
+      "from_team": "Finance",
+      "to_team": "Production",
+      "reason": "ERP upgrade: R12 works with all teams, Production staff test the ERP (R07, R09, R12)"
+    },
+    {
+      "from_team": "Finance",
+      "to_team": "Engineering",
+      "reason": "ERP upgrade: R12 works with all teams (R12; Engineering gives no direct confirmation)"
+    },
+    {
+      "from_team": "Sales",
+      "to_team": "Management",
+      "reason": "Head of Sales works with Management (R03). Management is not in the sample."
+    },
+    {
+      "from_team": "Finance",
+      "to_team": "Management",
+      "reason": "Controller and Head of Finance work with Management (R10, R12). Management is not in the sample."
+    },
+    {
+      "from_team": "Engineering",
+      "to_team": "Quality",
+      "reason": "Design engineer works with Quality (R05). Quality is not in the sample."
+    },
+    {
+      "from_team": "Production",
+      "to_team": "Quality",
+      "reason": "Shift lead works with Quality (R08). Quality is not in the sample."
+    },
+    {
+      "from_team": "Production",
+      "to_team": "Maintenance",
+      "reason": "Shift lead works with Maintenance (R08). Maintenance is not in the sample."
+    }
+  ],
+  "single_points_of_dependency": [
+    {
+      "respondent": "R04",
+      "what_depends_on_them": "Technical answers for custom sales quotes, and design decisions for the P7 series. R04 says about half the week goes to quote questions instead of P7.",
+      "evidence": [
+        "R01",
+        "R05",
+        "R04"
+      ]
+    },
+    {
+      "respondent": "R07",
+      "what_depends_on_them": "The manual capacity planning Excel, which only R07 maintains. It feeds production planning and delivery dates, and Sales finds capacity data unreliable.",
+      "evidence": [
+        "R07",
+        "R03"
+      ]
+    },
+    {
+      "respondent": "R12",
+      "what_depends_on_them": "Lead of the ERP upgrade (no dedicated team), IT vendor management and Finance leadership, all held by one person.",
+      "evidence": [
+        "R12"
+      ]
+    }
+  ]
+}
